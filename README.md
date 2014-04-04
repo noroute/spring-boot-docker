@@ -5,6 +5,9 @@ This is a quick tech demo to integrate the buzzwords of the day:
 [Docker](https://www.docker.io/) and
 [Microservices](http://martinfowler.com/articles/microservices.html).
 
+## Requirements
+1. Docker
+
 ## Features
 1. almost self contained (just add docker)
 1. up in 5 secs
@@ -28,7 +31,6 @@ This is a quick tech demo to integrate the buzzwords of the day:
     docker kill $DOCKER_ID
 
 ## NOTE
-
 If you're using
 [boot2docker](https://github.com/boot2docker/boot2docker) (e.g. you're
 a Mac user and running docker itself in a VM), your
