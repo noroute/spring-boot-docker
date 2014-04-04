@@ -1,0 +1,37 @@
+buildscript {
+  ext {
+    springBootVersion = '1.0.0.RELEASE'
+  }
+  repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "http://repo.spring.io/release" }
+  }
+  dependencies {
+    classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+  }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    baseName = 'gs-gradle'
+    version =  '0.1.0'
+}
+
+dependencies {
+   compile("org.springframework.boot:spring-boot-starter")
+   compile("org.springframework.boot:spring-boot-starter-jetty")
+   compile("org.springframework:spring-webmvc")
+   testCompile("org.springframework.boot:spring-boot-starter-test")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.11'
+}
