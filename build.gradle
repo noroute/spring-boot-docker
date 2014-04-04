@@ -21,7 +21,7 @@ repositories {
 }
 
 jar {
-    baseName = 'gs-gradle'
+    baseName = 'spring-boot-helloworld'
     version =  '0.1.0'
 }
 
