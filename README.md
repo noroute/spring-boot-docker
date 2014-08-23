@@ -5,6 +5,13 @@ This is a quick tech demo to integrate the buzzwords of the day:
 [Docker](https://www.docker.io/) and
 [Microservices](http://martinfowler.com/articles/microservices.html).
 
+## Compatibility
+* This has been tested on various Macs and should work on all Unixes supported
+  by Gradle/Docker
+* The Dockerfile currently installs a Java7 VM so you can't compile for Java8
+* There's no support for Windows since I don't have easy access to machines.
+  Therefore, there's no gradlew.bat file to not raise false hopes.
+
 ## Requirements
 1. Docker
 
